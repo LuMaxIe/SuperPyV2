@@ -1,0 +1,52 @@
+{
+    "Beef": {
+        "17973": {
+            "Sell_Date": "2021-12-22",
+            "Sold_Product_Ids": {
+                "355780": {
+                    "amount_sold": 10,
+                    "cost_price_each": "1.9",
+                    "sell_price_each": 4.27,
+                    "total_cost": 19.0,
+                    "total_profit": 24
+                }
+            }
+        },
+        "99565": {
+            "Sell_Date": "2021-12-22",
+            "Sold_Product_Ids": {
+                "355780": {
+                    "amount_sold": 2,
+                    "cost_price_each": "1.9",
+                    "sell_price_each": 4.27,
+                    "total_cost": 3.8,
+                    "total_profit": 5
+                }
+            }
+        },
+        "65295": {
+            "Sell_Date": "2021-12-22",
+            "Sold_Product_Ids": {
+                "355780": {
+                    "amount_sold": 3,
+                    "cost_price_each": "1.9",
+                    "sell_price_each": 4.27,
+                    "total_cost": 5.7,
+                    "total_profit": 7
+                }
+            }
+        },
+        "91540": {
+            "Sell_Date": "2021-12-22",
+            "Sold_Product_Ids": {
+                "355780": {
+                    "amount_sold": 2,
+                    "cost_price_each": "1.9",
+                    "sell_price_each": 4.27,
+                    "total_cost": 3.8,
+                    "total_profit": 5
+                }
+            }
+        }
+    }
+}

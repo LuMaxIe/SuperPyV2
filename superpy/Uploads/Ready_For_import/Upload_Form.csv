@@ -1,0 +1,4 @@
+Id,Product_Name,Product_Group,Count,Price,Markup,Sell_Price,Expiration_Date,Date_Product_Added
+,Apple,Fruit,500,0.25,1.25,,2022-01-07,
+,Kiwi,Fruit,300,0.31,1.45,,2022-01-11,
+,Pear,Fruit,100,0.56,1.35,,2022-01-17,

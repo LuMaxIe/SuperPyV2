@@ -1,0 +1,4 @@
+Id,Product_Name,Product_Group,Count,Price,Markup,Sell_Price,Expiration_Date,Date_Product_Added
+631883,Apple,Fruit,300,0.47,1.67,0.78,2022-01-02,2021-12-13
+355780,Beef,Meat,23,1.9,2.25,4.27,2022-01-22,2021-12-13
+306599,Pear,Fruit,250,0.8,1.35,1.08,2022-01-21,2021-12-22
