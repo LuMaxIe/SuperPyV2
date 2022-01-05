@@ -11,6 +11,7 @@ def buying_product():
         "Product_Name": "Apple",
         "Product_Group": "Fruit",
         "Count": 500,
+        "Initial_Count": 0,
         "Price": 0.25,
         "Markup": 1.25, 
         "Expiration_Date": datetime.date.today() + datetime.timedelta(25),
@@ -33,6 +34,7 @@ def multiple_products():
                 "Product_Name": "Kiwi",
                 "Product_Group": "Fruit",
                 "Count": 200,
+                "Initial_Count": "",
                 "Price": 0.45,
                 "Markup": 1.35, 
                 "Expiration_Date": datetime.date.today() + datetime.timedelta(35),
@@ -42,6 +44,7 @@ def multiple_products():
                 "Product_Name": "Steak",
                 "Product_Group": "Meat",
                 "Count": 50,
+                "Initial_Count": "",
                 "Price": 2.25,
                 "Markup": 2.00, 
                 "Expiration_Date": datetime.date.today() + datetime.timedelta(12),
@@ -51,6 +54,7 @@ def multiple_products():
                 "Product_Name": "Kiwi",
                 "Product_Group": "Fruit",
                 "Count": 100,
+                "Initial_Count": "",
                 "Price": 0.45,
                 "Markup": 1.35, 
                 "Expiration_Date": datetime.date.today() + datetime.timedelta(35),
@@ -116,6 +120,7 @@ def test_product_inventory(buying_product, selling_product, multiple_products, s
             id_list = []
 
             for row in csv_reader:
+                print(row)
                 if row["Product_Name"] == buying_product[0]["Product_Name"]:
                     # test if all fields in file have values
                     for item in row:

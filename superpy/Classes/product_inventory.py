@@ -7,16 +7,18 @@ from rich.table import Table
 class Inventory:
     # Standard headers used to create the inventory & sales file
     invent_headers = ["Id", "Product_Name", "Product_Group",
-                      "Count", "Price", "Markup", "Sell_Price", "Expiration_Date", "Date_Product_Added"]
+                      "Count", "Initial_Count", "Price", "Markup", "Sell_Price", 
+                      "Expiration_Date", "Date_Product_Added"]
     sales_headers = ["name", "amount"]
     
 
     def __init__(self, inventory_database_path, sales_database_path, upload_path, sales_upload_path, date_adjust=0):
         self.date = str(datetime.date.today() + datetime.timedelta(date_adjust))
+        self.date_obj = datetime.date.today() + datetime.timedelta(date_adjust)
         self.data_path = inventory_database_path
         self.sales_database_path = sales_database_path
 
-        # Check if the inventory database file has (the correct) headers
+        # Check if the inventory database file has (the correct) headers and, if not, create them
         with open(inventory_database_path, 'r+', newline='') as csvfile:
           invent_reader = csv.DictReader(csvfile)
           invent_writer = csv.DictWriter(csvfile, self.invent_headers ,lineterminator="\n")
@@ -51,6 +53,7 @@ class Inventory:
                 "Product_Name": "Apple",
                 "Product_Group": "Fruit",
                 "Count": 500,
+                "Initial_Count": "Auto generated leave field empty!",
                 "Price": 0.25,
                 "Markup": 1.25,
                 "Sell_Price": "Auto generated leave field empty!",
@@ -95,12 +98,12 @@ class Inventory:
             "Markup", "Sell_Price", "Id"] else sorted(list(invent_reader), key=lambda d: float(d[sort_key]), reverse=is_reversed)
             for row in sort_table:
               table.add_row(row["Id"], row["Product_Name"], row["Product_Group"], 
-                            row["Count"], row["Price"], row["Markup"], 
+                            row["Count"], row["Initial_Count"], row["Price"], row["Markup"], 
                             row["Sell_Price"], row["Expiration_Date"], row["Date_Product_Added"])
           else:
             for row in invent_reader:
               table.add_row(row["Id"], row["Product_Name"], row["Product_Group"], 
-                            row["Count"], row["Price"], row["Markup"], 
+                            row["Count"], row["Initial_Count"], row["Price"], row["Markup"], 
                             row["Sell_Price"], row["Expiration_Date"], row["Date_Product_Added"])
         
         return table
@@ -161,7 +164,10 @@ class Inventory:
                 product_name: {
                   sale_num: {
                     "Sell_Date": self.date,
-                    "Sold_Product_Ids": {},
+                    "Total_Revenue": 0.00,
+                    "Total_Cost": 0.00,
+                    "Total_Profit": 0.00,
+                    "Sold_Product_Ids": {}
                   }
                 }
               }
@@ -184,31 +190,37 @@ class Inventory:
                       # check if there are more products to sell then there are in the current row & skip if there are nog more products of the id
                       if sold_number > batch and batch != 0:
                         row['Count'] = 0
+                        sales_report_item[product_name][sale_num]["Total_Revenue"] += round(((float(row["Sell_Price"]) * batch)), 2)
+                        sales_report_item[product_name][sale_num]["Total_Cost"] += round(batch * float(row["Price"]), 2)
+                        sales_report_item[product_name][sale_num]["Total_Profit"] += round((batch * (float(row["Sell_Price"]) - float(row["Price"]))), 2)
                         sales_report_item[product_name][sale_num]["Sold_Product_Ids"][row["Id"]] = {
                           "amount_sold": batch,
                           "cost_price_each": row["Price"],
                           "sell_price_each": float(row["Sell_Price"]),
                           "total_cost": round(batch * float(row["Price"]), 2),
-                          "total_profit": round(sold_number * (float(row["Sell_Price"]) - float(row["Price"])))
+                          "total_profit": round(batch * (float(row["Sell_Price"]) - float(row["Price"])), 2)
                         }
                         # stock_counter.append(batch)
                         sold_number -= batch
 
                       elif sold_number < batch:
                         row['Count'] = batch - sold_number
+                        sales_report_item[product_name][sale_num]["Total_Revenue"] += round((float(row["Sell_Price"]) * sold_number), 2)
+                        sales_report_item[product_name][sale_num]["Total_Cost"] += round(sold_number * float(row["Price"]), 2)
+                        sales_report_item[product_name][sale_num]["Total_Profit"] += round(sold_number * (float(row["Sell_Price"]) - float(row["Price"])), 2)
                         sales_report_item[product_name][sale_num]["Sold_Product_Ids"][row["Id"]] = {
                           "amount_sold": sold_number,
                           "cost_price_each": row["Price"],
                           "sell_price_each": float(row["Sell_Price"]),
                           "total_cost": round(sold_number * float(row["Price"]), 2),
-                          "total_profit": round(sold_number * (float(row["Sell_Price"]) - float(row["Price"])))
+                          "total_profit": round(sold_number * (float(row["Sell_Price"]) - float(row["Price"])), 2)
                         }
                         sold_number = 0
     
                   adjusted_rows.append(row)
 
               if sold_number > stock_counter:
-                raise ValueError(f"\nWe have {sold_number} too few {product_name} in stock for this sale, we currently have {stock_counter}")
+                raise ValueError(f"\nWe have {sold_number} too few {product_name} in stock for this sale, we currently have {stock_counter}, this sale was not added")
               if found_product == False:
                 raise ValueError(f"{product_name} not found, please add some to the inventory")
 
@@ -233,9 +245,4 @@ class Inventory:
 
           except ValueError as error:
             print(error)
-            # print(f"""
-            # Error! Upload of sales failed because there is not enough {product_name} in stock.
-            # We currently have {stock_counter} & while you're trying to buy {sold_number}, 
-            # please add more produce of this kind to the inventory""")
             return 0
-

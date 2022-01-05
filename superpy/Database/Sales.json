@@ -1,50 +1,1158 @@
 {
     "Beef": {
-        "17973": {
-            "Sell_Date": "2021-12-22",
+        "26375": {
+            "Sell_Date": "2021-12-29",
+            "Total_Revenue": 30.71,
+            "Total_Cost": 13.5,
+            "Total_Profit": 17.21,
             "Sold_Product_Ids": {
                 "355780": {
-                    "amount_sold": 10,
+                    "amount_sold": 5,
                     "cost_price_each": "1.9",
                     "sell_price_each": 4.27,
-                    "total_cost": 19.0,
-                    "total_profit": 24
+                    "total_cost": 9.5,
+                    "total_profit": 11.85
+                },
+                "812777": {
+                    "amount_sold": 2,
+                    "cost_price_each": "2.0",
+                    "sell_price_each": 4.68,
+                    "total_cost": 4.0,
+                    "total_profit": 5.36
                 }
             }
         },
-        "99565": {
-            "Sell_Date": "2021-12-22",
+        "31289": {
+            "Sell_Date": "2021-12-19",
+            "Total_Revenue": 34.16,
+            "Total_Cost": 15.2,
+            "Total_Profit": 18.96,
+            "Sold_Product_Ids": {
+                "355780": {
+                    "amount_sold": 8,
+                    "cost_price_each": "1.9",
+                    "sell_price_each": 4.27,
+                    "total_cost": 15.2,
+                    "total_profit": 18.96
+                }
+            }
+        },
+        "14758": {
+            "Sell_Date": "2021-12-19",
+            "Total_Revenue": 8.54,
+            "Total_Cost": 3.8,
+            "Total_Profit": 4.74,
             "Sold_Product_Ids": {
                 "355780": {
                     "amount_sold": 2,
                     "cost_price_each": "1.9",
                     "sell_price_each": 4.27,
                     "total_cost": 3.8,
-                    "total_profit": 5
+                    "total_profit": 4.74
                 }
             }
         },
-        "65295": {
-            "Sell_Date": "2021-12-22",
+        "93163": {
+            "Sell_Date": "2021-12-20",
+            "Total_Revenue": 21.35,
+            "Total_Cost": 9.5,
+            "Total_Profit": 11.85,
             "Sold_Product_Ids": {
                 "355780": {
+                    "amount_sold": 5,
+                    "cost_price_each": "1.9",
+                    "sell_price_each": 4.27,
+                    "total_cost": 9.5,
+                    "total_profit": 11.85
+                }
+            }
+        },
+        "32815": {
+            "Sell_Date": "2022-02-17",
+            "Total_Revenue": 34.16,
+            "Total_Cost": 15.2,
+            "Total_Profit": 18.96,
+            "Sold_Product_Ids": {
+                "355780": {
+                    "amount_sold": 8,
+                    "cost_price_each": "1.9",
+                    "sell_price_each": 4.27,
+                    "total_cost": 15.2,
+                    "total_profit": 18.96
+                }
+            }
+        },
+        "47320": {
+            "Sell_Date": "2022-02-17",
+            "Total_Revenue": 8.54,
+            "Total_Cost": 3.8,
+            "Total_Profit": 4.74,
+            "Sold_Product_Ids": {
+                "355780": {
+                    "amount_sold": 2,
+                    "cost_price_each": "1.9",
+                    "sell_price_each": 4.27,
+                    "total_cost": 3.8,
+                    "total_profit": 4.74
+                }
+            }
+        },
+        "28016": {
+            "Sell_Date": "2021-08-01",
+            "Total_Revenue": 34.16,
+            "Total_Cost": 15.2,
+            "Total_Profit": 18.96,
+            "Sold_Product_Ids": {
+                "355780": {
+                    "amount_sold": 8,
+                    "cost_price_each": "1.9",
+                    "sell_price_each": 4.27,
+                    "total_cost": 15.2,
+                    "total_profit": 18.96
+                }
+            }
+        },
+        "23507": {
+            "Sell_Date": "2021-08-01",
+            "Total_Revenue": 8.54,
+            "Total_Cost": 3.8,
+            "Total_Profit": 4.74,
+            "Sold_Product_Ids": {
+                "355780": {
+                    "amount_sold": 2,
+                    "cost_price_each": "1.9",
+                    "sell_price_each": 4.27,
+                    "total_cost": 3.8,
+                    "total_profit": 4.74
+                }
+            }
+        },
+        "44680": {
+            "Sell_Date": "2022-01-02",
+            "Total_Revenue": 256.2,
+            "Total_Cost": 114.0,
+            "Total_Profit": 142.2,
+            "Sold_Product_Ids": {
+                "355780": {
+                    "amount_sold": 60,
+                    "cost_price_each": "1.9",
+                    "sell_price_each": 4.27,
+                    "total_cost": 114.0,
+                    "total_profit": 142.2
+                }
+            }
+        },
+        "40204": {
+            "Sell_Date": "2021-12-26",
+            "Total_Revenue": 34.16,
+            "Total_Cost": 15.2,
+            "Total_Profit": 18.96,
+            "Sold_Product_Ids": {
+                "355780": {
+                    "amount_sold": 8,
+                    "cost_price_each": "1.9",
+                    "sell_price_each": 4.27,
+                    "total_cost": 15.2,
+                    "total_profit": 18.96
+                }
+            }
+        },
+        "57891": {
+            "Sell_Date": "2021-12-26",
+            "Total_Revenue": 8.54,
+            "Total_Cost": 3.8,
+            "Total_Profit": 4.74,
+            "Sold_Product_Ids": {
+                "355780": {
+                    "amount_sold": 2,
+                    "cost_price_each": "1.9",
+                    "sell_price_each": 4.27,
+                    "total_cost": 3.8,
+                    "total_profit": 4.74
+                }
+            }
+        },
+        "27876": {
+            "Sell_Date": "2021-11-26",
+            "Total_Revenue": 35.39,
+            "Total_Cost": 15.5,
+            "Total_Profit": 19.89,
+            "Sold_Product_Ids": {
+                "355780": {
+                    "amount_sold": 5,
+                    "cost_price_each": "1.9",
+                    "sell_price_each": 4.27,
+                    "total_cost": 9.5,
+                    "total_profit": 11.85
+                },
+                "812777": {
                     "amount_sold": 3,
-                    "cost_price_each": "1.9",
-                    "sell_price_each": 4.27,
-                    "total_cost": 5.7,
-                    "total_profit": 7
+                    "cost_price_each": "2.0",
+                    "sell_price_each": 4.68,
+                    "total_cost": 6.0,
+                    "total_profit": 8.04
                 }
             }
         },
-        "91540": {
-            "Sell_Date": "2021-12-22",
+        "30730": {
+            "Sell_Date": "2021-11-26",
+            "Total_Revenue": 9.36,
+            "Total_Cost": 4.0,
+            "Total_Profit": 5.36,
             "Sold_Product_Ids": {
-                "355780": {
+                "812777": {
                     "amount_sold": 2,
-                    "cost_price_each": "1.9",
-                    "sell_price_each": 4.27,
-                    "total_cost": 3.8,
-                    "total_profit": 5
+                    "cost_price_each": "2.0",
+                    "sell_price_each": 4.68,
+                    "total_cost": 4.0,
+                    "total_profit": 5.36
+                }
+            }
+        },
+        "16025": {
+            "Sell_Date": "2021-11-06",
+            "Total_Revenue": 37.44,
+            "Total_Cost": 16.0,
+            "Total_Profit": 21.44,
+            "Sold_Product_Ids": {
+                "812777": {
+                    "amount_sold": 8,
+                    "cost_price_each": "2.0",
+                    "sell_price_each": 4.68,
+                    "total_cost": 16.0,
+                    "total_profit": 21.44
+                }
+            }
+        },
+        "44377": {
+            "Sell_Date": "2021-12-21",
+            "Total_Revenue": 37.44,
+            "Total_Cost": 16.0,
+            "Total_Profit": 21.44,
+            "Sold_Product_Ids": {
+                "812777": {
+                    "amount_sold": 8,
+                    "cost_price_each": "2.0",
+                    "sell_price_each": 4.68,
+                    "total_cost": 16.0,
+                    "total_profit": 21.44
+                }
+            }
+        },
+        "35293": {
+            "Sell_Date": "2021-12-21",
+            "Total_Revenue": 9.36,
+            "Total_Cost": 4.0,
+            "Total_Profit": 5.36,
+            "Sold_Product_Ids": {
+                "812777": {
+                    "amount_sold": 2,
+                    "cost_price_each": "2.0",
+                    "sell_price_each": 4.68,
+                    "total_cost": 4.0,
+                    "total_profit": 5.36
+                }
+            }
+        }
+    },
+    "Apple": {
+        "92947": {
+            "Sell_Date": "2021-12-19",
+            "Total_Revenue": 3.9,
+            "Total_Cost": 2.35,
+            "Total_Profit": 1.55,
+            "Sold_Product_Ids": {
+                "631883": {
+                    "amount_sold": 5,
+                    "cost_price_each": "0.47",
+                    "sell_price_each": 0.78,
+                    "total_cost": 2.35,
+                    "total_profit": 1.55
+                }
+            }
+        },
+        "65106": {
+            "Sell_Date": "2021-12-19",
+            "Total_Revenue": 5.46,
+            "Total_Cost": 3.29,
+            "Total_Profit": 2.17,
+            "Sold_Product_Ids": {
+                "631883": {
+                    "amount_sold": 7,
+                    "cost_price_each": "0.47",
+                    "sell_price_each": 0.78,
+                    "total_cost": 3.29,
+                    "total_profit": 2.17
+                }
+            }
+        },
+        "39803": {
+            "Sell_Date": "2021-12-19",
+            "Total_Revenue": 9.36,
+            "Total_Cost": 5.64,
+            "Total_Profit": 3.72,
+            "Sold_Product_Ids": {
+                "631883": {
+                    "amount_sold": 12,
+                    "cost_price_each": "0.47",
+                    "sell_price_each": 0.78,
+                    "total_cost": 5.64,
+                    "total_profit": 3.72
+                }
+            }
+        },
+        "73216": {
+            "Sell_Date": "2021-12-19",
+            "Total_Revenue": 11.7,
+            "Total_Cost": 7.05,
+            "Total_Profit": 4.65,
+            "Sold_Product_Ids": {
+                "631883": {
+                    "amount_sold": 15,
+                    "cost_price_each": "0.47",
+                    "sell_price_each": 0.78,
+                    "total_cost": 7.05,
+                    "total_profit": 4.65
+                }
+            }
+        },
+        "97803": {
+            "Sell_Date": "2022-02-17",
+            "Total_Revenue": 3.9,
+            "Total_Cost": 2.35,
+            "Total_Profit": 1.55,
+            "Sold_Product_Ids": {
+                "631883": {
+                    "amount_sold": 5,
+                    "cost_price_each": "0.47",
+                    "sell_price_each": 0.78,
+                    "total_cost": 2.35,
+                    "total_profit": 1.55
+                }
+            }
+        },
+        "86668": {
+            "Sell_Date": "2022-02-17",
+            "Total_Revenue": 5.46,
+            "Total_Cost": 3.29,
+            "Total_Profit": 2.17,
+            "Sold_Product_Ids": {
+                "631883": {
+                    "amount_sold": 7,
+                    "cost_price_each": "0.47",
+                    "sell_price_each": 0.78,
+                    "total_cost": 3.29,
+                    "total_profit": 2.17
+                }
+            }
+        },
+        "44082": {
+            "Sell_Date": "2022-02-17",
+            "Total_Revenue": 9.36,
+            "Total_Cost": 5.64,
+            "Total_Profit": 3.72,
+            "Sold_Product_Ids": {
+                "631883": {
+                    "amount_sold": 12,
+                    "cost_price_each": "0.47",
+                    "sell_price_each": 0.78,
+                    "total_cost": 5.64,
+                    "total_profit": 3.72
+                }
+            }
+        },
+        "96361": {
+            "Sell_Date": "2022-02-17",
+            "Total_Revenue": 11.7,
+            "Total_Cost": 7.05,
+            "Total_Profit": 4.65,
+            "Sold_Product_Ids": {
+                "631883": {
+                    "amount_sold": 15,
+                    "cost_price_each": "0.47",
+                    "sell_price_each": 0.78,
+                    "total_cost": 7.05,
+                    "total_profit": 4.65
+                }
+            }
+        },
+        "28223": {
+            "Sell_Date": "2021-08-01",
+            "Total_Revenue": 3.9,
+            "Total_Cost": 2.35,
+            "Total_Profit": 1.55,
+            "Sold_Product_Ids": {
+                "631883": {
+                    "amount_sold": 5,
+                    "cost_price_each": "0.47",
+                    "sell_price_each": 0.78,
+                    "total_cost": 2.35,
+                    "total_profit": 1.55
+                }
+            }
+        },
+        "82020": {
+            "Sell_Date": "2021-08-01",
+            "Total_Revenue": 5.46,
+            "Total_Cost": 3.29,
+            "Total_Profit": 2.17,
+            "Sold_Product_Ids": {
+                "631883": {
+                    "amount_sold": 7,
+                    "cost_price_each": "0.47",
+                    "sell_price_each": 0.78,
+                    "total_cost": 3.29,
+                    "total_profit": 2.17
+                }
+            }
+        },
+        "40791": {
+            "Sell_Date": "2021-08-01",
+            "Total_Revenue": 9.36,
+            "Total_Cost": 5.64,
+            "Total_Profit": 3.72,
+            "Sold_Product_Ids": {
+                "631883": {
+                    "amount_sold": 12,
+                    "cost_price_each": "0.47",
+                    "sell_price_each": 0.78,
+                    "total_cost": 5.64,
+                    "total_profit": 3.72
+                }
+            }
+        },
+        "14563": {
+            "Sell_Date": "2021-08-01",
+            "Total_Revenue": 11.7,
+            "Total_Cost": 7.05,
+            "Total_Profit": 4.65,
+            "Sold_Product_Ids": {
+                "631883": {
+                    "amount_sold": 15,
+                    "cost_price_each": "0.47",
+                    "sell_price_each": 0.78,
+                    "total_cost": 7.05,
+                    "total_profit": 4.65
+                }
+            }
+        },
+        "23605": {
+            "Sell_Date": "2021-12-26",
+            "Total_Revenue": 3.9,
+            "Total_Cost": 2.35,
+            "Total_Profit": 1.55,
+            "Sold_Product_Ids": {
+                "631883": {
+                    "amount_sold": 5,
+                    "cost_price_each": "0.47",
+                    "sell_price_each": 0.78,
+                    "total_cost": 2.35,
+                    "total_profit": 1.55
+                }
+            }
+        },
+        "20047": {
+            "Sell_Date": "2021-12-26",
+            "Total_Revenue": 5.46,
+            "Total_Cost": 3.29,
+            "Total_Profit": 2.17,
+            "Sold_Product_Ids": {
+                "631883": {
+                    "amount_sold": 7,
+                    "cost_price_each": "0.47",
+                    "sell_price_each": 0.78,
+                    "total_cost": 3.29,
+                    "total_profit": 2.17
+                }
+            }
+        },
+        "82825": {
+            "Sell_Date": "2021-12-26",
+            "Total_Revenue": 9.36,
+            "Total_Cost": 5.64,
+            "Total_Profit": 3.72,
+            "Sold_Product_Ids": {
+                "631883": {
+                    "amount_sold": 12,
+                    "cost_price_each": "0.47",
+                    "sell_price_each": 0.78,
+                    "total_cost": 5.64,
+                    "total_profit": 3.72
+                }
+            }
+        },
+        "78536": {
+            "Sell_Date": "2021-12-26",
+            "Total_Revenue": 11.7,
+            "Total_Cost": 7.05,
+            "Total_Profit": 4.65,
+            "Sold_Product_Ids": {
+                "631883": {
+                    "amount_sold": 15,
+                    "cost_price_each": "0.47",
+                    "sell_price_each": 0.78,
+                    "total_cost": 7.05,
+                    "total_profit": 4.65
+                }
+            }
+        },
+        "60262": {
+            "Sell_Date": "2021-11-26",
+            "Total_Revenue": 3.9,
+            "Total_Cost": 2.35,
+            "Total_Profit": 1.55,
+            "Sold_Product_Ids": {
+                "631883": {
+                    "amount_sold": 5,
+                    "cost_price_each": "0.47",
+                    "sell_price_each": 0.78,
+                    "total_cost": 2.35,
+                    "total_profit": 1.55
+                }
+            }
+        },
+        "55857": {
+            "Sell_Date": "2021-11-26",
+            "Total_Revenue": 5.46,
+            "Total_Cost": 3.29,
+            "Total_Profit": 2.17,
+            "Sold_Product_Ids": {
+                "631883": {
+                    "amount_sold": 7,
+                    "cost_price_each": "0.47",
+                    "sell_price_each": 0.78,
+                    "total_cost": 3.29,
+                    "total_profit": 2.17
+                }
+            }
+        },
+        "89880": {
+            "Sell_Date": "2021-11-26",
+            "Total_Revenue": 9.36,
+            "Total_Cost": 5.64,
+            "Total_Profit": 3.72,
+            "Sold_Product_Ids": {
+                "631883": {
+                    "amount_sold": 12,
+                    "cost_price_each": "0.47",
+                    "sell_price_each": 0.78,
+                    "total_cost": 5.64,
+                    "total_profit": 3.72
+                }
+            }
+        },
+        "23587": {
+            "Sell_Date": "2021-11-26",
+            "Total_Revenue": 11.7,
+            "Total_Cost": 7.05,
+            "Total_Profit": 4.65,
+            "Sold_Product_Ids": {
+                "631883": {
+                    "amount_sold": 15,
+                    "cost_price_each": "0.47",
+                    "sell_price_each": 0.78,
+                    "total_cost": 7.05,
+                    "total_profit": 4.65
+                }
+            }
+        },
+        "31484": {
+            "Sell_Date": "2021-11-06",
+            "Total_Revenue": 3.9,
+            "Total_Cost": 2.35,
+            "Total_Profit": 1.55,
+            "Sold_Product_Ids": {
+                "631883": {
+                    "amount_sold": 5,
+                    "cost_price_each": "0.47",
+                    "sell_price_each": 0.78,
+                    "total_cost": 2.35,
+                    "total_profit": 1.55
+                }
+            }
+        },
+        "37126": {
+            "Sell_Date": "2021-11-06",
+            "Total_Revenue": 5.46,
+            "Total_Cost": 3.29,
+            "Total_Profit": 2.17,
+            "Sold_Product_Ids": {
+                "631883": {
+                    "amount_sold": 7,
+                    "cost_price_each": "0.47",
+                    "sell_price_each": 0.78,
+                    "total_cost": 3.29,
+                    "total_profit": 2.17
+                }
+            }
+        },
+        "10839": {
+            "Sell_Date": "2021-12-21",
+            "Total_Revenue": 3.9,
+            "Total_Cost": 2.35,
+            "Total_Profit": 1.55,
+            "Sold_Product_Ids": {
+                "631883": {
+                    "amount_sold": 5,
+                    "cost_price_each": "0.47",
+                    "sell_price_each": 0.78,
+                    "total_cost": 2.35,
+                    "total_profit": 1.55
+                }
+            }
+        },
+        "59202": {
+            "Sell_Date": "2021-12-21",
+            "Total_Revenue": 5.46,
+            "Total_Cost": 3.29,
+            "Total_Profit": 2.17,
+            "Sold_Product_Ids": {
+                "631883": {
+                    "amount_sold": 7,
+                    "cost_price_each": "0.47",
+                    "sell_price_each": 0.78,
+                    "total_cost": 3.29,
+                    "total_profit": 2.17
+                }
+            }
+        },
+        "29156": {
+            "Sell_Date": "2021-12-21",
+            "Total_Revenue": 9.36,
+            "Total_Cost": 5.64,
+            "Total_Profit": 3.72,
+            "Sold_Product_Ids": {
+                "631883": {
+                    "amount_sold": 12,
+                    "cost_price_each": "0.47",
+                    "sell_price_each": 0.78,
+                    "total_cost": 5.64,
+                    "total_profit": 3.72
+                }
+            }
+        },
+        "53509": {
+            "Sell_Date": "2021-12-21",
+            "Total_Revenue": 11.7,
+            "Total_Cost": 7.05,
+            "Total_Profit": 4.65,
+            "Sold_Product_Ids": {
+                "631883": {
+                    "amount_sold": 15,
+                    "cost_price_each": "0.47",
+                    "sell_price_each": 0.78,
+                    "total_cost": 7.05,
+                    "total_profit": 4.65
+                }
+            }
+        }
+    },
+    "Cheese": {
+        "75712": {
+            "Sell_Date": "2021-12-19",
+            "Total_Revenue": 11.04,
+            "Total_Cost": 6.3,
+            "Total_Profit": 4.74,
+            "Sold_Product_Ids": {
+                "694533": {
+                    "amount_sold": 3,
+                    "cost_price_each": "2.1",
+                    "sell_price_each": 3.68,
+                    "total_cost": 6.3,
+                    "total_profit": 4.74
+                }
+            }
+        },
+        "13598": {
+            "Sell_Date": "2021-12-19",
+            "Total_Revenue": 14.72,
+            "Total_Cost": 8.4,
+            "Total_Profit": 6.32,
+            "Sold_Product_Ids": {
+                "694533": {
+                    "amount_sold": 4,
+                    "cost_price_each": "2.1",
+                    "sell_price_each": 3.68,
+                    "total_cost": 8.4,
+                    "total_profit": 6.32
+                }
+            }
+        },
+        "34135": {
+            "Sell_Date": "2022-02-17",
+            "Total_Revenue": 11.04,
+            "Total_Cost": 6.3,
+            "Total_Profit": 4.74,
+            "Sold_Product_Ids": {
+                "694533": {
+                    "amount_sold": 3,
+                    "cost_price_each": "2.1",
+                    "sell_price_each": 3.68,
+                    "total_cost": 6.3,
+                    "total_profit": 4.74
+                }
+            }
+        },
+        "30551": {
+            "Sell_Date": "2022-02-17",
+            "Total_Revenue": 14.72,
+            "Total_Cost": 8.4,
+            "Total_Profit": 6.32,
+            "Sold_Product_Ids": {
+                "694533": {
+                    "amount_sold": 4,
+                    "cost_price_each": "2.1",
+                    "sell_price_each": 3.68,
+                    "total_cost": 8.4,
+                    "total_profit": 6.32
+                }
+            }
+        },
+        "19250": {
+            "Sell_Date": "2021-08-01",
+            "Total_Revenue": 11.04,
+            "Total_Cost": 6.3,
+            "Total_Profit": 4.74,
+            "Sold_Product_Ids": {
+                "694533": {
+                    "amount_sold": 3,
+                    "cost_price_each": "2.1",
+                    "sell_price_each": 3.68,
+                    "total_cost": 6.3,
+                    "total_profit": 4.74
+                }
+            }
+        },
+        "49699": {
+            "Sell_Date": "2021-08-01",
+            "Total_Revenue": 14.72,
+            "Total_Cost": 8.4,
+            "Total_Profit": 6.32,
+            "Sold_Product_Ids": {
+                "694533": {
+                    "amount_sold": 4,
+                    "cost_price_each": "2.1",
+                    "sell_price_each": 3.68,
+                    "total_cost": 8.4,
+                    "total_profit": 6.32
+                }
+            }
+        },
+        "97112": {
+            "Sell_Date": "2022-01-02",
+            "Total_Revenue": 220.8,
+            "Total_Cost": 126.0,
+            "Total_Profit": 94.8,
+            "Sold_Product_Ids": {
+                "694533": {
+                    "amount_sold": 60,
+                    "cost_price_each": "2.1",
+                    "sell_price_each": 3.68,
+                    "total_cost": 126.0,
+                    "total_profit": 94.8
+                }
+            }
+        },
+        "73455": {
+            "Sell_Date": "2021-12-26",
+            "Total_Revenue": 11.04,
+            "Total_Cost": 6.3,
+            "Total_Profit": 4.74,
+            "Sold_Product_Ids": {
+                "694533": {
+                    "amount_sold": 3,
+                    "cost_price_each": "2.1",
+                    "sell_price_each": 3.68,
+                    "total_cost": 6.3,
+                    "total_profit": 4.74
+                }
+            }
+        },
+        "65399": {
+            "Sell_Date": "2021-12-26",
+            "Total_Revenue": 14.72,
+            "Total_Cost": 8.4,
+            "Total_Profit": 6.32,
+            "Sold_Product_Ids": {
+                "694533": {
+                    "amount_sold": 4,
+                    "cost_price_each": "2.1",
+                    "sell_price_each": 3.68,
+                    "total_cost": 8.4,
+                    "total_profit": 6.32
+                }
+            }
+        },
+        "94768": {
+            "Sell_Date": "2021-11-26",
+            "Total_Revenue": 11.04,
+            "Total_Cost": 6.3,
+            "Total_Profit": 4.74,
+            "Sold_Product_Ids": {
+                "694533": {
+                    "amount_sold": 3,
+                    "cost_price_each": "2.1",
+                    "sell_price_each": 3.68,
+                    "total_cost": 6.3,
+                    "total_profit": 4.74
+                }
+            }
+        },
+        "25065": {
+            "Sell_Date": "2021-11-26",
+            "Total_Revenue": 14.72,
+            "Total_Cost": 8.4,
+            "Total_Profit": 6.32,
+            "Sold_Product_Ids": {
+                "694533": {
+                    "amount_sold": 4,
+                    "cost_price_each": "2.1",
+                    "sell_price_each": 3.68,
+                    "total_cost": 8.4,
+                    "total_profit": 6.32
+                }
+            }
+        },
+        "86736": {
+            "Sell_Date": "2021-11-06",
+            "Total_Revenue": 11.04,
+            "Total_Cost": 6.3,
+            "Total_Profit": 4.74,
+            "Sold_Product_Ids": {
+                "694533": {
+                    "amount_sold": 3,
+                    "cost_price_each": "2.1",
+                    "sell_price_each": 3.68,
+                    "total_cost": 6.3,
+                    "total_profit": 4.74
+                }
+            }
+        },
+        "93521": {
+            "Sell_Date": "2021-12-21",
+            "Total_Revenue": 11.04,
+            "Total_Cost": 6.3,
+            "Total_Profit": 4.74,
+            "Sold_Product_Ids": {
+                "694533": {
+                    "amount_sold": 3,
+                    "cost_price_each": "2.1",
+                    "sell_price_each": 3.68,
+                    "total_cost": 6.3,
+                    "total_profit": 4.74
+                }
+            }
+        },
+        "92903": {
+            "Sell_Date": "2021-12-21",
+            "Total_Revenue": 14.72,
+            "Total_Cost": 8.4,
+            "Total_Profit": 6.32,
+            "Sold_Product_Ids": {
+                "694533": {
+                    "amount_sold": 4,
+                    "cost_price_each": "2.1",
+                    "sell_price_each": 3.68,
+                    "total_cost": 8.4,
+                    "total_profit": 6.32
+                }
+            }
+        }
+    },
+    "Broccoli": {
+        "78455": {
+            "Sell_Date": "2021-12-19",
+            "Total_Revenue": 36.5,
+            "Total_Cost": 24.25,
+            "Total_Profit": 12.25,
+            "Sold_Product_Ids": {
+                "411864": {
+                    "amount_sold": 25,
+                    "cost_price_each": "0.97",
+                    "sell_price_each": 1.46,
+                    "total_cost": 24.25,
+                    "total_profit": 12.25
+                }
+            }
+        },
+        "87225": {
+            "Sell_Date": "2021-12-19",
+            "Total_Revenue": 54.02,
+            "Total_Cost": 35.89,
+            "Total_Profit": 18.13,
+            "Sold_Product_Ids": {
+                "411864": {
+                    "amount_sold": 37,
+                    "cost_price_each": "0.97",
+                    "sell_price_each": 1.46,
+                    "total_cost": 35.89,
+                    "total_profit": 18.13
+                }
+            }
+        },
+        "58043": {
+            "Sell_Date": "2022-02-17",
+            "Total_Revenue": 36.5,
+            "Total_Cost": 24.25,
+            "Total_Profit": 12.25,
+            "Sold_Product_Ids": {
+                "411864": {
+                    "amount_sold": 25,
+                    "cost_price_each": "0.97",
+                    "sell_price_each": 1.46,
+                    "total_cost": 24.25,
+                    "total_profit": 12.25
+                }
+            }
+        },
+        "98057": {
+            "Sell_Date": "2022-02-17",
+            "Total_Revenue": 51.92,
+            "Total_Cost": 37.01,
+            "Total_Profit": 14.91,
+            "Sold_Product_Ids": {
+                "411864": {
+                    "amount_sold": 23,
+                    "cost_price_each": "0.97",
+                    "sell_price_each": 1.46,
+                    "total_cost": 22.31,
+                    "total_profit": 11.27
+                },
+                "788639": {
+                    "amount_sold": 14,
+                    "cost_price_each": "1.05",
+                    "sell_price_each": 1.31,
+                    "total_cost": 14.7,
+                    "total_profit": 3.64
+                }
+            }
+        },
+        "54839": {
+            "Sell_Date": "2021-08-01",
+            "Total_Revenue": 32.75,
+            "Total_Cost": 26.25,
+            "Total_Profit": 6.5,
+            "Sold_Product_Ids": {
+                "788639": {
+                    "amount_sold": 25,
+                    "cost_price_each": "1.05",
+                    "sell_price_each": 1.31,
+                    "total_cost": 26.25,
+                    "total_profit": 6.5
+                }
+            }
+        },
+        "34511": {
+            "Sell_Date": "2021-08-01",
+            "Total_Revenue": 48.47,
+            "Total_Cost": 38.85,
+            "Total_Profit": 9.62,
+            "Sold_Product_Ids": {
+                "788639": {
+                    "amount_sold": 37,
+                    "cost_price_each": "1.05",
+                    "sell_price_each": 1.31,
+                    "total_cost": 38.85,
+                    "total_profit": 9.62
+                }
+            }
+        },
+        "70644": {
+            "Sell_Date": "2021-12-26",
+            "Total_Revenue": 32.75,
+            "Total_Cost": 26.25,
+            "Total_Profit": 6.5,
+            "Sold_Product_Ids": {
+                "788639": {
+                    "amount_sold": 25,
+                    "cost_price_each": "1.05",
+                    "sell_price_each": 1.31,
+                    "total_cost": 26.25,
+                    "total_profit": 6.5
+                }
+            }
+        },
+        "79798": {
+            "Sell_Date": "2021-12-26",
+            "Total_Revenue": 48.47,
+            "Total_Cost": 38.85,
+            "Total_Profit": 9.62,
+            "Sold_Product_Ids": {
+                "788639": {
+                    "amount_sold": 37,
+                    "cost_price_each": "1.05",
+                    "sell_price_each": 1.31,
+                    "total_cost": 38.85,
+                    "total_profit": 9.62
+                }
+            }
+        },
+        "65156": {
+            "Sell_Date": "2021-11-26",
+            "Total_Revenue": 32.75,
+            "Total_Cost": 26.25,
+            "Total_Profit": 6.5,
+            "Sold_Product_Ids": {
+                "788639": {
+                    "amount_sold": 25,
+                    "cost_price_each": "1.05",
+                    "sell_price_each": 1.31,
+                    "total_cost": 26.25,
+                    "total_profit": 6.5
+                }
+            }
+        },
+        "62073": {
+            "Sell_Date": "2021-11-26",
+            "Total_Revenue": 30.13,
+            "Total_Cost": 24.15,
+            "Total_Profit": 5.98,
+            "Sold_Product_Ids": {
+                "788639": {
+                    "amount_sold": 23,
+                    "cost_price_each": "1.05",
+                    "sell_price_each": 1.31,
+                    "total_cost": 24.15,
+                    "total_profit": 5.98
+                }
+            }
+        }
+    },
+    "Pear": {
+        "43835": {
+            "Sell_Date": "2021-12-19",
+            "Total_Revenue": 7.56,
+            "Total_Cost": 5.6,
+            "Total_Profit": 1.96,
+            "Sold_Product_Ids": {
+                "306599": {
+                    "amount_sold": 7,
+                    "cost_price_each": "0.8",
+                    "sell_price_each": 1.08,
+                    "total_cost": 5.6,
+                    "total_profit": 1.96
+                }
+            }
+        },
+        "34088": {
+            "Sell_Date": "2021-12-20",
+            "Total_Revenue": 16.2,
+            "Total_Cost": 12.0,
+            "Total_Profit": 4.2,
+            "Sold_Product_Ids": {
+                "306599": {
+                    "amount_sold": 15,
+                    "cost_price_each": "0.8",
+                    "sell_price_each": 1.08,
+                    "total_cost": 12.0,
+                    "total_profit": 4.2
+                }
+            }
+        },
+        "99096": {
+            "Sell_Date": "2022-02-17",
+            "Total_Revenue": 7.56,
+            "Total_Cost": 5.6,
+            "Total_Profit": 1.96,
+            "Sold_Product_Ids": {
+                "306599": {
+                    "amount_sold": 7,
+                    "cost_price_each": "0.8",
+                    "sell_price_each": 1.08,
+                    "total_cost": 5.6,
+                    "total_profit": 1.96
+                }
+            }
+        },
+        "21684": {
+            "Sell_Date": "2021-08-01",
+            "Total_Revenue": 7.56,
+            "Total_Cost": 5.6,
+            "Total_Profit": 1.96,
+            "Sold_Product_Ids": {
+                "306599": {
+                    "amount_sold": 7,
+                    "cost_price_each": "0.8",
+                    "sell_price_each": 1.08,
+                    "total_cost": 5.6,
+                    "total_profit": 1.96
+                }
+            }
+        },
+        "26030": {
+            "Sell_Date": "2021-12-26",
+            "Total_Revenue": 7.56,
+            "Total_Cost": 5.6,
+            "Total_Profit": 1.96,
+            "Sold_Product_Ids": {
+                "306599": {
+                    "amount_sold": 7,
+                    "cost_price_each": "0.8",
+                    "sell_price_each": 1.08,
+                    "total_cost": 5.6,
+                    "total_profit": 1.96
+                }
+            }
+        },
+        "54969": {
+            "Sell_Date": "2021-11-26",
+            "Total_Revenue": 7.56,
+            "Total_Cost": 5.6,
+            "Total_Profit": 1.96,
+            "Sold_Product_Ids": {
+                "306599": {
+                    "amount_sold": 7,
+                    "cost_price_each": "0.8",
+                    "sell_price_each": 1.08,
+                    "total_cost": 5.6,
+                    "total_profit": 1.96
+                }
+            }
+        },
+        "35899": {
+            "Sell_Date": "2021-12-21",
+            "Total_Revenue": 7.56,
+            "Total_Cost": 5.6,
+            "Total_Profit": 1.96,
+            "Sold_Product_Ids": {
+                "306599": {
+                    "amount_sold": 7,
+                    "cost_price_each": "0.8",
+                    "sell_price_each": 1.08,
+                    "total_cost": 5.6,
+                    "total_profit": 1.96
+                }
+            }
+        }
+    },
+    "Ananas": {
+        "13972": {
+            "Sell_Date": "2021-12-21",
+            "Total_Revenue": 25.0,
+            "Total_Cost": 20.0,
+            "Total_Profit": 5.0,
+            "Sold_Product_Ids": {
+                "380628": {
+                    "amount_sold": 25,
+                    "cost_price_each": "0.8",
+                    "sell_price_each": 1.0,
+                    "total_cost": 20.0,
+                    "total_profit": 5.0
+                }
+            }
+        },
+        "48061": {
+            "Sell_Date": "2021-12-21",
+            "Total_Revenue": 37.0,
+            "Total_Cost": 29.6,
+            "Total_Profit": 7.4,
+            "Sold_Product_Ids": {
+                "380628": {
+                    "amount_sold": 37,
+                    "cost_price_each": "0.8",
+                    "sell_price_each": 1.0,
+                    "total_cost": 29.6,
+                    "total_profit": 7.4
                 }
             }
         }
