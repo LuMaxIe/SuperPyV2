@@ -37,20 +37,28 @@ The terminal styling is not consistent yet
 1. Data removal
 I'd like to add more data removal options, like creating a fresh install with the use of a command and/or the ability to pinpoint items you want to remove. At this point in time you have to do this manually
 
-2. 
+2. Expand the inventory overview function filter functionalities
+
+3. Expand the inventory overview function with export capabilities
 
 
 ## Report
 
 ### "Helpless"
 
-I've used the module Rich to make the entire application as user friendly as possible. By asking questions through a prompt with rich, I've made it possible for the application to be used by a non tech savy user. One of the requirements was to add a "help" option in the application, but I've tried to make the application to help all the way through.
+I've used the module Rich to make the entire application as user friendly as possible. By asking questions through a prompt with rich, I've made it possible for the application to be used by a non tech savy user. One of the requirements was to add a "help" option in the application, but I've tried to make the application help all the way through.
 
-### Set-up
+### Set-up sequence
 
-The application is made so that, if there are files missing (i.e. inventory.csv), it will prompt the user to give permission to add those files. Without this set-up the application will not start.
+The application is made so that, if there are essential files missing (i.e. inventory.csv), it will prompt the user to give permission to add those files. Without this set-up the application will not start.
 
-### 
+### PyTest
+
+I'm proud of having used PyTest in this application, even though be I started using it way to far into the project, it did open my eyes to TDD. I will be using TDD in all of my future projects, because it saved me a couple of times ruining my own code :).
+
+### In-terminal graph
+
+I wanted to make the application to be fully functional in the terminal without having to open or click away from it. The graph from Matplotlib in the financial section messed this up, because it opened a new window with the graph. I've went on a search and found another package that made it able to display the graph inside the terminal. It may not be the prettiest, but I'm proud of it!
 
 
 
