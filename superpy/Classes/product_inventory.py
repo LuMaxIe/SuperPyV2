@@ -111,7 +111,7 @@ class Inventory:
     # Function to add products to the inventory file
     def add_product(self, products: list):
 
-        with open(self.data_path, 'a+', newline='') as csvfile:
+        with open(self.data_path, 'a+', newline='\n') as csvfile:
           invent_reader = csv.DictReader(csvfile, delimiter=',')
           for product in products:
             prod_to_add = product
@@ -129,6 +129,9 @@ class Inventory:
             # Calculate and add product selling price
             prod_to_add["Sell_Price"] = round((float(product["Price"]) * float(product["Markup"])), 2)
             prod_to_add["Date_Product_Added"] = self.date
+
+            # Set the initial count
+            prod_to_add["Initial_Count"] = prod_to_add["Count"]
 
             invent_writer = csv.DictWriter(csvfile, self.invent_headers, delimiter=',')
             invent_writer.writerow(prod_to_add)

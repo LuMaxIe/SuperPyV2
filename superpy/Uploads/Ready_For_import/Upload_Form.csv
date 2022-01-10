@@ -1,4 +1,10 @@
-Id,Product_Name,Product_Group,Count,Price,Markup,Sell_Price,Expiration_Date,Date_Product_Added
-,Broccoli,Vegetables,500,0.25,1.25,,2022-01-07,
-,Kiwi,Fruit,300,0.31,abcd,,2022-01-11,
-,Pear,Fruit,100,0.56,1.35,,2022-01-17,
+Id,Product_Name,Product_Group,Count,Initial_Count,Price,Markup,Sell_Price,Expiration_Date,Date_Product_Added
+,Broccoli,Vegetables,25,,0.25,1.25,,2022-01-07,
+,Kiwi,Fruit,25,,0.31,1.5,,2022-01-11,
+,Beef,Meat,25,,0.56,1.35,,2022-01-17,
+,Broccoli,Vegetables,25,,0.25,1.25,,2022-01-07,
+,Chocolate,Candy,25,,0.31,1.70,,2022-05-11,
+,Pear,Fruit,25,,0.56,1.35,,2022-01-17,
+,Cheese,Dairy,25,,0.25,1.25,,2022-07-07,
+,Kiwi,Fruit,25,,0.31,1.70,,2022-02-11,
+,Pear,Fruit,25,,0.56,1.35,,2022-03-17,

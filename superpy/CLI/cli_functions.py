@@ -31,7 +31,7 @@ def cli_menu(used_menu, date_to_display):
 # Creates and logs a Rich table in the terminal which can be sorted on a specified key.
 def cli_inventory(database):
     console = Console(theme=cli_theme.SuperPy_Theme)
-    want_sorting = Confirm.ask("\nDo you want to sort the overview on a certain key?")
+    want_sorting = Confirm.ask("\nDo you want to sort the overview on a certain key?", default="n")
 
     if want_sorting:
         key_sort = Prompt.ask("\nOn what key would you like the sorting to be done?", choices=["Id", "Product_Name", "Product_Group",
@@ -148,10 +148,10 @@ def cli_add_sales(database):
 
 # function to fetch all financial data and show this in a graph
 def cli_reports(database):
-    report_days_back = IntPrompt.ask("\nHow many days back do you want to report on?\n\n")
-    report_on_kpi_revenue = Confirm.ask("\nDo you want to add total revenue in your report?\n")
-    report_on_kpi_costs = Confirm.ask("\nDo you want to add total costs in your report?\n")
-    report_on_kpi_profit = Confirm.ask("\nDo you want to add total profit in your report?\n")
+    report_days_back = IntPrompt.ask("\nHow many days back do you want to report on?\n\n", default=30)
+    report_on_kpi_revenue = Confirm.ask("\nDo you want to add total revenue in your report?\n", default="y")
+    report_on_kpi_costs = Confirm.ask("\nDo you want to add total costs in your report?\n", default="y")
+    report_on_kpi_profit = Confirm.ask("\nDo you want to add total profit in your report?\n", default="y")
     base = database.date_obj
     date_list = [str(base - datetime.timedelta(days=x)) for x in range(report_days_back)]
     date_list.reverse()
@@ -173,20 +173,20 @@ def cli_reports(database):
             sales_data = json.load(salesfile)
 
             for product in sales_data:
-                sale = sales_data[product]
-                for sale_info in sale:
-                    info = sale[sale_info]
+                product_sale_records = sales_data[product]
+                for sale_entry in product_sale_records:
+                    info = product_sale_records[sale_entry]
                     if info["Sell_Date"] == date:
                         found_sales_data = True
                         if len(revenue) == 0:
                             revenue.append(info["Total_Revenue"])
                             profit.append(info["Total_Profit"])
-                        elif (len(revenue) - 1) == (date_list.index(date)) and len(revenue) != 0: 
-                            revenue[date_list.index(date)] = info["Total_Revenue"] + revenue[date_list.index(date) - 1]
-                            profit[date_list.index(date)] = info["Total_Profit"] + profit[date_list.index(date) - 1]
+                        elif (len(revenue) - 1) == (date_list.index(date)) and len(revenue) != 0:
+                            revenue[date_list.index(date)] = round(info["Total_Revenue"] + revenue[date_list.index(date)], 2)
+                            profit[date_list.index(date)] = round(info["Total_Profit"] + profit[date_list.index(date)], 2)
                         else:
-                            revenue.append(info["Total_Revenue"] + revenue[date_list.index(date) - 1])
-                            profit.append(info["Total_Profit"] + profit[date_list.index(date) - 1])   
+                            revenue.append(round(info["Total_Revenue"] + revenue[date_list.index(date) - 1], 2))
+                            profit.append(round(info["Total_Profit"] + profit[date_list.index(date) - 1], 2))   
 
         # check if there was a buying action on the date in the list
         with open(database.data_path, 'r', newline='') as csvfile:
@@ -230,6 +230,7 @@ def cli_reports(database):
     plt.plot_size(width=100, height=30)
     plt.show()
     plt.clear_data()
+    plt.clear_plot()
     
     return
 
