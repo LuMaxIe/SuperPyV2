@@ -4,7 +4,7 @@ import json
 import re
 import plotext as plt
 
-from plotext._utility import color, plot
+from plotext._utility import color, data, plot
 from rich.console import Console
 from rich.panel import Panel
 from rich.prompt import Confirm, FloatPrompt, IntPrompt, Prompt
@@ -234,3 +234,6 @@ def cli_reports(database):
     
     return
 
+def export_data(database):
+    print(database.date)
+    return
