@@ -83,17 +83,24 @@ def main():
             menu_is_used = True
             continue
 
-        elif menu_choice == "exit superPY":
-            break
-
         elif menu_choice == "adjust date":
             date_adjustment = int(Prompt.ask(f"\nWith how many days would like to adjust the current date? {datetime.date.today()}\n"))
             console.print(f"Succesfully adjusted date to: {str(datetime.date.today() + datetime.timedelta(date_adjustment))}\n")
+            menu_is_used = True
             continue
 
         elif menu_choice == "add sales":
             cli_functions.cli_add_sales(db)
+            menu_is_used = True
             continue
+
+        elif menu_choice == "export inventory data":
+            cli_functions.cli_export_data(db)
+            menu_is_used = True
+            continue
+
+        elif menu_choice == "exit superPY":
+            break
 
         return
 
