@@ -1,8 +1,13 @@
 # SuperPyV2
 
+## Dependencies
+
+Rich 11.2.0
+Plotext 4.1.5
+
 ## Usage Guide
 
-The application comes with some data (products/sales) added so you can mess around. Please take note that this data is not logical or chronological and may not make sense.
+The application comes with some data (products/sales) added so you can mess around. Please take note that this data is not logical or chronological and may not make sense.I.e. there is some sales data to review as a graph and you can set the amount of days you want to look back for data to include in the graph. At the time of writing (2022-02-16) the standard days to look back is 100 and this will show you a nice graph. If you use this in the future the graph might not show data.
 
 ### Clean sheet
 
@@ -10,15 +15,19 @@ To start the application without any data you must remove/delete the Database an
 
 ### Add & Sell products
 
-You can add or sell products either manually, or by using an upload file. There is a template in the Uploads/Template folder for you to use. Fill out some products and add the file to the Uploads/Ready_For_Import folder. You can do this by following the menu which asks you what to do :)
+You can add or sell products either manually, or by using an upload file. There is a template in the Uploads/Template folder for you to use. Fill out some products and add the file to the Uploads/Ready_For_folder. You can do this by following the menu which asks you what to do. You could also use some ready to import files that have some data filled in.
 
 ### Get an overview
 
 After you've added stock, generate an overview of your current stock sorted on the key and direction you prefer. you can do this by typing "review inventory" in the main menu.
 
+### Export inventory data
+
+You can export selections of inventory data to a csv file. This file will be in the "Downloads" folder
+
 ### Check you financials
 
-After you've made some sales and purchases, please type "review financials" in the main menu to get a graph in your terminal of your financial data.
+After you've made some sales and purchases, please type "review financials" in the main menu to get a graph in your terminal of your financial data. Standard days to look back and fetch data from is 100 and with the template this amount will actually show you a graph. 
 
 ## Known issues to resolve:
 
@@ -31,6 +40,9 @@ When uploading a csv file (either sales or addition of products) will break on t
 
 3. Styling
 The terminal styling is not consistent yet
+
+4. Export csv file
+The export file will be appended to if it is extracted on the same day
 
 ## Future ideas
 

@@ -63,6 +63,7 @@ def cli_logic():
         db = Inventory("./Database/Inventory.csv", "./Database/Sales.json", "./Uploads/Template/Upload_Form.csv", 
         "./Uploads/Template/Sales_Upload_Form.csv", date_adjustment)
         menu_choice = cli_functions.cli_menu(menu_is_used, db.date)
+
         if menu_choice == "review inventory":
             cli_functions.cli_inventory(db)
             menu_is_used = True
@@ -75,12 +76,18 @@ def cli_logic():
             cli_functions.cli_add_products(db)
             menu_is_used = True
             continue
-        elif menu_choice == "exit superPY":
-            break
         elif menu_choice == "adjust date":
             date_adjustment = int(Prompt.ask(f"\nWith how many days would like to adjust the current date? {datetime.date.today()}"))
+            menu_is_used = True
             continue
         elif menu_choice == "add sales":
             cli_functions.cli_add_sales(db)
+            menu_is_used = True
             continue
+        elif menu_choice == "export inventory data":
+            cli_functions.cli_export_data(db)
+            menu_is_used = True
+            continue
+        elif menu_choice == "exit superPY":
+            break
         return

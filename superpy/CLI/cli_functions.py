@@ -1,10 +1,11 @@
 import datetime
 import csv
 import json
+from random import randint
 import re
 import plotext as plt
 
-from plotext._utility import color, plot
+from plotext._utility import color, data, plot
 from rich.console import Console
 from rich.panel import Panel
 from rich.prompt import Confirm, FloatPrompt, IntPrompt, Prompt
@@ -21,7 +22,7 @@ def cli_menu(used_menu, date_to_display):
         title=str(date_to_display), style="info"))
         
     menu_choice = Prompt.ask('\nWhat would you like to do?: \n\n', choices=["review inventory", "review financials", "add products", 
-    "add sales", "adjust date", "exit superpy"])
+    "add sales", "adjust date", "export inventory data", "exit superpy"])
         
     return menu_choice
 
@@ -148,7 +149,7 @@ def cli_add_sales(database):
 
 # function to fetch all financial data and show this in a graph
 def cli_reports(database):
-    report_days_back = IntPrompt.ask("\nHow many days back do you want to report on?\n\n", default=30)
+    report_days_back = IntPrompt.ask("\nHow many days back do you want to report on?\n\n", default=100)
     report_on_kpi_revenue = Confirm.ask("\nDo you want to add total revenue in your report?\n", default="y")
     report_on_kpi_costs = Confirm.ask("\nDo you want to add total costs in your report?\n", default="y")
     report_on_kpi_profit = Confirm.ask("\nDo you want to add total profit in your report?\n", default="y")
@@ -234,3 +235,55 @@ def cli_reports(database):
     
     return
 
+def cli_export_data(database):
+    console = Console(theme=cli_theme.SuperPy_Theme)
+
+    selection_of_columns = list(database.invent_headers)
+    selected_columns = []
+    if not Confirm.ask(f"\nDo you want to include all columns in your export?\nColumns: {selection_of_columns}"):
+        console.print(f"\nPlease make a selection out of {selection_of_columns}")
+        for column in selection_of_columns:
+            if Confirm.ask(f"\nDo you want to add: {column} into your report?"):
+                selected_columns.append(column)
+
+    console.print(f"\nSelected columns (empty list means all columns): {selected_columns}")
+
+    want_sorting = Confirm.ask("\nDo you want to sort the export on a certain column?", default=False)
+
+    file_name = Prompt.ask("Give a name/number for the file you want to download", default=randint(0, 100000))
+
+    if want_sorting and len(selected_columns) == 0:
+        key_sort = Prompt.ask("\nOn what column would you like the sorting to be done?", choices=selection_of_columns)
+        want_reversed = Confirm.ask("\nDo you want to sort on a descending order? ('n' will order in ascending manner)")        
+    elif want_sorting:
+        key_sort = Prompt.ask("\nOn what column would you like the sorting to be done?", choices=selected_columns)
+        want_reversed = Confirm.ask("\nDo you want to sort on a descending order? ('n' will order in ascending manner)")
+
+    with open(database.data_path, 'r', newline='') as csvfile:
+        invent_reader = csv.DictReader(csvfile, delimiter=',')
+        with open(f"./Downloads/export_{database.date}_{file_name}.csv", "w+") as f:
+            report_writer = csv.DictWriter(f, fieldnames= selection_of_columns if len(selected_columns) == 0 else selected_columns, lineterminator="\n")
+            report_writer.writeheader()
+            # Check if sorting of the table is needed.
+            if want_sorting != False: 
+                sort_table = sorted(list(invent_reader), key=lambda d: d[key_sort], reverse=want_reversed) if key_sort not in ["Count", 
+                "Markup", "Sell_Price", "Id"] else sorted(list(invent_reader), key=lambda d: float(d[key_sort]), reverse=want_reversed)
+
+                for row in sort_table:
+                    adjusted_row = row.copy()
+                    keys_to_include = selection_of_columns if len(selected_columns) == 0 else selected_columns
+                    for row_item in row:
+                        if row_item not in keys_to_include:
+                            del adjusted_row[row_item]
+                    report_writer.writerow(adjusted_row)
+            # Write unsorted
+            else:
+                for row in invent_reader:
+                    adjusted_row = row.copy()
+                    keys_to_include = selection_of_columns if len(selected_columns) == 0 else selected_columns
+                    for row_item in row:
+                        if row_item not in keys_to_include:
+                            del adjusted_row[row_item]
+                    report_writer.writerow(adjusted_row)
+
+    return
