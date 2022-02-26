@@ -29,13 +29,14 @@ def cli_logic():
     db_inventory = "./Database/Inventory.csv"
     db_sales = "./Database/Sales.json"
     db_reports = "./Database/Reports.csv"
+    db_downloads = "./Downloads"
 
 
     # Application Set-up / Check for missing files
     while True:
 
         for item in [db_path, db_uploads, db_uploads_template_folder, db_uploads_ready, db_uploads_template, 
-        db_uploads_sales_template, db_inventory, db_sales, db_reports]:
+        db_uploads_sales_template, db_inventory, db_sales, db_reports, db_downloads]:
             if not os.path.exists(item):
                 create_permission = Confirm.ask(f"""\n\nYou're missing the following folder/file: {item}, which is essential
                  for this program, do you want to create it?""")
@@ -49,7 +50,7 @@ def cli_logic():
 
         all_paths_exist = True
         for item in [db_path, db_uploads, db_uploads_template_folder, db_uploads_ready, 
-        db_uploads_template, db_uploads_sales_template, db_inventory, db_sales, db_reports]:
+        db_uploads_template, db_uploads_sales_template, db_inventory, db_sales, db_reports, db_downloads]:
             if not os.path.exists(item):
                 all_paths_exist = False
         if all_paths_exist:
